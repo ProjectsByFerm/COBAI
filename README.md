@@ -1,6 +1,4 @@
-#COBOL AI Agent for Precision Learning is an intelligent system designed to help users master COBOL with accuracy, clarity, and efficiency. 
-
-COBAI — COBOL AI Learning & Evaluation System
+COBOL AI Agent for Precision Learning is an intelligent system designed to help users master COBOL with accuracy, clarity, and efficiency. 
 
 COBAI is a structured AI-powered learning and evaluation framework designed to teach and assess COBOL programming skills using LLM-driven coaching, scoring, and research-based experimentation.
 
