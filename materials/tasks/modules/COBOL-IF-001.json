@@ -1,0 +1,90 @@
+{
+  "module_id": "COBOL-IF-001",
+  "content_version": "v1",
+  "title": "Reading IF Logic",
+  "difficulty": "beginner",
+  "concepts": ["IF", "ELSE", "numeric comparison"],
+  "learning_objectives": [
+    "Read a simple COBOL IF statement",
+    "Explain how numeric comparison affects control flow",
+    "Predict which DISPLAY branch executes"
+  ],
+  "tutorial_file": "materials/tutorials/COBOL-IF-001.md",
+  "snippet": "       IDENTIFICATION DIVISION.\n       PROGRAM-ID. BALANCECHK.\n\n       DATA DIVISION.\n       WORKING-STORAGE SECTION.\n       01 ACCOUNT-BALANCE PIC 9(4) VALUE 1200.\n\n       PROCEDURE DIVISION.\n           IF ACCOUNT-BALANCE > 1000\n               DISPLAY 'PRIORITY ACCOUNT'\n           ELSE\n               DISPLAY 'STANDARD ACCOUNT'\n           END-IF\n           STOP RUN.",
+  "practice_question": {
+    "id": "IF-PRACTICE-001",
+    "type": "multiple_choice",
+    "prompt": "In this snippet, what is being checked by the IF statement?",
+    "choices": {
+      "A": "Whether ACCOUNT-BALANCE is greater than 1000",
+      "B": "Whether PRIORITY ACCOUNT is empty",
+      "C": "Whether STOP RUN is true",
+      "D": "Whether the program name is BALANCECHK"
+    },
+    "answer": "A"
+  },
+  "timed_task": {
+    "id": "IF-TIMED-001",
+    "type": "multiple_choice",
+    "prompt": "Given the starting value in the snippet, which message is displayed?",
+    "choices": {
+      "A": "STANDARD ACCOUNT",
+      "B": "PRIORITY ACCOUNT",
+      "C": "BALANCECHK",
+      "D": "ACCOUNT-BALANCE"
+    },
+    "answer": "B"
+  },
+  "pre_test": [
+    {
+      "id": "IF-PRE-001",
+      "type": "multiple_choice",
+      "prompt": "What does an IF statement generally do in a programming language?",
+      "choices": {
+        "A": "Repeats a block forever",
+        "B": "Chooses between paths based on a condition",
+        "C": "Declares a file system",
+        "D": "Creates the program name"
+      },
+      "answer": "B"
+    },
+    {
+      "id": "IF-PRE-002",
+      "type": "multiple_choice",
+      "prompt": "In a comparison like X > 10, what does > mean?",
+      "choices": {
+        "A": "Less than",
+        "B": "Equal to",
+        "C": "Greater than",
+        "D": "Move into"
+      },
+      "answer": "C"
+    }
+  ],
+  "post_test": [
+    {
+      "id": "IF-POST-001",
+      "type": "multiple_choice",
+      "prompt": "Why does the ELSE branch not run in this snippet?",
+      "choices": {
+        "A": "Because DISPLAY blocks ELSE",
+        "B": "Because ACCOUNT-BALANCE is greater than 1000",
+        "C": "Because WORKING-STORAGE is empty",
+        "D": "Because END-IF cancels the ELSE"
+      },
+      "answer": "B"
+    },
+    {
+      "id": "IF-POST-002",
+      "type": "multiple_choice",
+      "prompt": "What role does END-IF play in COBOL?",
+      "choices": {
+        "A": "It copies numeric values",
+        "B": "It marks the end of the IF block",
+        "C": "It prints the condition",
+        "D": "It restarts the program"
+      },
+      "answer": "B"
+    }
+  ]
+}

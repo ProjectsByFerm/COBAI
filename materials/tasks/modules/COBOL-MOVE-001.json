@@ -1,0 +1,90 @@
+{
+  "module_id": "COBOL-MOVE-001",
+  "content_version": "v1",
+  "title": "MOVE and DISPLAY Basics",
+  "difficulty": "beginner",
+  "concepts": ["WORKING-STORAGE", "MOVE", "DISPLAY"],
+  "learning_objectives": [
+    "Recognize where variables are declared in WORKING-STORAGE",
+    "Explain what MOVE does in a simple assignment",
+    "Predict what a DISPLAY statement prints after a MOVE"
+  ],
+  "tutorial_file": "materials/tutorials/COBOL-MOVE-001.md",
+  "snippet": "       IDENTIFICATION DIVISION.\n       PROGRAM-ID. HELLOMOVE.\n\n       DATA DIVISION.\n       WORKING-STORAGE SECTION.\n       01 CUSTOMER-NAME PIC X(10) VALUE 'ALICE'.\n       01 OUTPUT-NAME   PIC X(10).\n\n       PROCEDURE DIVISION.\n           MOVE CUSTOMER-NAME TO OUTPUT-NAME\n           DISPLAY OUTPUT-NAME\n           STOP RUN.",
+  "practice_question": {
+    "id": "MOVE-PRACTICE-001",
+    "type": "multiple_choice",
+    "prompt": "Which statement copies the value from one COBOL variable into another?",
+    "choices": {
+      "A": "DISPLAY",
+      "B": "MOVE",
+      "C": "STOP RUN",
+      "D": "SECTION"
+    },
+    "answer": "B"
+  },
+  "timed_task": {
+    "id": "MOVE-TIMED-001",
+    "type": "multiple_choice",
+    "prompt": "After the snippet runs, what is most likely printed?",
+    "choices": {
+      "A": "CUSTOMER-NAME",
+      "B": "OUTPUT-NAME",
+      "C": "ALICE",
+      "D": "HELLOMOVE"
+    },
+    "answer": "C"
+  },
+  "pre_test": [
+    {
+      "id": "MOVE-PRE-001",
+      "type": "multiple_choice",
+      "prompt": "In COBOL, where are simple variables commonly declared?",
+      "choices": {
+        "A": "PROCEDURE DIVISION",
+        "B": "WORKING-STORAGE SECTION",
+        "C": "STOP RUN",
+        "D": "PROGRAM-ID"
+      },
+      "answer": "B"
+    },
+    {
+      "id": "MOVE-PRE-002",
+      "type": "multiple_choice",
+      "prompt": "What does DISPLAY generally do?",
+      "choices": {
+        "A": "Prints or shows output",
+        "B": "Declares a variable",
+        "C": "Performs division",
+        "D": "Ends the program immediately"
+      },
+      "answer": "A"
+    }
+  ],
+  "post_test": [
+    {
+      "id": "MOVE-POST-001",
+      "type": "multiple_choice",
+      "prompt": "What is the main purpose of the line MOVE CUSTOMER-NAME TO OUTPUT-NAME?",
+      "choices": {
+        "A": "It prints both variables",
+        "B": "It copies a value into OUTPUT-NAME",
+        "C": "It creates a new section",
+        "D": "It changes the program name"
+      },
+      "answer": "B"
+    },
+    {
+      "id": "MOVE-POST-002",
+      "type": "multiple_choice",
+      "prompt": "Which variable is sent to the screen by DISPLAY OUTPUT-NAME?",
+      "choices": {
+        "A": "CUSTOMER-NAME only",
+        "B": "OUTPUT-NAME",
+        "C": "PROGRAM-ID",
+        "D": "WORKING-STORAGE"
+      },
+      "answer": "B"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""COBAI application package."""

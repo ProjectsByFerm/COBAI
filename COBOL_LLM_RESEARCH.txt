@@ -1,0 +1,104 @@
+===============================================================================
+COBAI RESEARCH NOTE
+===============================================================================
+
+PROJECT
+-------------------------------------------------------------------------------
+
+COBAI is a small first-pass study and prototype focused on COBOL learning.
+It explores whether a guardrailed LLM explanation workflow can help novice
+developers understand short COBOL examples more effectively than a static
+tutorial.
+
+The system uses an external LLM API. It does not train or fine-tune a model.
+
+
+CORE QUESTION
+-------------------------------------------------------------------------------
+
+Does a guardrailed, API-backed COBOL learning agent improve novice developers'
+comprehension and timed task performance compared with a matched static COBOL
+tutorial?
+
+
+WHY THIS PROJECT
+-------------------------------------------------------------------------------
+
+COBOL remains important in legacy business systems, but many newer developers
+have little to no exposure to it. That makes COBOL a good domain for studying
+whether LLM explanations can act as onboarding support for unfamiliar code.
+
+This project stays narrow on purpose:
+
+- beginner-friendly COBOL only
+- short self-contained code snippets
+- fixed prompts and lesson materials
+- simple pre-test, post-test, and timed task measures
+
+
+TREATMENT DESIGN
+-------------------------------------------------------------------------------
+
+The treatment is not a general chatbot. It is a guardrailed COBOL coach with:
+
+- a fixed prompt and guardrail layer
+- lesson-specific snippet context
+- beginner-oriented explanations
+- blocked answer leakage during locked assessments
+
+The control group receives matched static tutorial material that covers the
+same snippet and concepts.
+
+
+PRIMARY OUTCOMES
+-------------------------------------------------------------------------------
+
+- post-test comprehension score
+- timed task accuracy
+- timed task completion time
+
+Secondary outcomes:
+
+- pre/post gain
+- confidence rating
+- usefulness rating
+
+
+STARTER CONTENT
+-------------------------------------------------------------------------------
+
+The MVP covers three beginner concepts:
+
+- `MOVE` and `DISPLAY`
+- `IF` / `ELSE`
+- `COMPUTE`
+
+These are enough to pilot the workflow before adding more COBOL content.
+
+
+RELATED-WORK DIRECTION
+-------------------------------------------------------------------------------
+
+This project is informed by prior work on LLM code explanations and COBOL
+understanding, including:
+
+- Daye Nam et al., work on using LLMs for code understanding
+- Juho Leinonen et al., comparison of student and LLM code explanations
+- COBRAIN, which studies LLMs for COBOL legacy understanding
+- recent work on multi-agent COBOL explanation systems
+- research on how AI assistance affects coding skill formation
+
+For the final report, formal citations should be validated and formatted in the
+course-required citation style.
+
+
+CONTRIBUTION
+-------------------------------------------------------------------------------
+
+COBAI aims to contribute:
+
+- a small but coherent COBOL learning agent prototype
+- a reusable prompt-guardrail pattern for narrow legacy-language tutoring
+- a lightweight study design that can be defended honestly as exploratory
+
+===============================================================================

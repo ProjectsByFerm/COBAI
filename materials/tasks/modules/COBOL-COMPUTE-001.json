@@ -1,0 +1,90 @@
+{
+  "module_id": "COBOL-COMPUTE-001",
+  "content_version": "v1",
+  "title": "COMPUTE for Simple Business Math",
+  "difficulty": "beginner",
+  "concepts": ["COMPUTE", "numeric fields", "business rule output"],
+  "learning_objectives": [
+    "Recognize a simple COMPUTE statement",
+    "Track how numeric values are combined",
+    "Interpret the business meaning of a calculated result"
+  ],
+  "tutorial_file": "materials/tutorials/COBOL-COMPUTE-001.md",
+  "snippet": "       IDENTIFICATION DIVISION.\n       PROGRAM-ID. BONUSCALC.\n\n       DATA DIVISION.\n       WORKING-STORAGE SECTION.\n       01 BASE-PAY     PIC 9(4) VALUE 2000.\n       01 BONUS-RATE   PIC 9V99 VALUE 0.10.\n       01 BONUS-AMOUNT PIC 9(4)V99.\n\n       PROCEDURE DIVISION.\n           COMPUTE BONUS-AMOUNT = BASE-PAY * BONUS-RATE\n           DISPLAY BONUS-AMOUNT\n           STOP RUN.",
+  "practice_question": {
+    "id": "COMPUTE-PRACTICE-001",
+    "type": "multiple_choice",
+    "prompt": "What is COMPUTE doing in this snippet?",
+    "choices": {
+      "A": "Ending the program",
+      "B": "Calculating BONUS-AMOUNT from BASE-PAY and BONUS-RATE",
+      "C": "Declaring WORKING-STORAGE",
+      "D": "Changing the program name"
+    },
+    "answer": "B"
+  },
+  "timed_task": {
+    "id": "COMPUTE-TIMED-001",
+    "type": "multiple_choice",
+    "prompt": "If BASE-PAY is 2000 and BONUS-RATE is 0.10, what result should BONUS-AMOUNT hold?",
+    "choices": {
+      "A": "20",
+      "B": "200",
+      "C": "2000",
+      "D": "2100"
+    },
+    "answer": "B"
+  },
+  "pre_test": [
+    {
+      "id": "COMPUTE-PRE-001",
+      "type": "multiple_choice",
+      "prompt": "Which COBOL statement is commonly used for arithmetic expressions?",
+      "choices": {
+        "A": "DISPLAY",
+        "B": "MOVE",
+        "C": "COMPUTE",
+        "D": "SECTION"
+      },
+      "answer": "C"
+    },
+    {
+      "id": "COMPUTE-PRE-002",
+      "type": "multiple_choice",
+      "prompt": "What does multiplication do in a business formula?",
+      "choices": {
+        "A": "Copies text",
+        "B": "Combines numbers according to a factor or rate",
+        "C": "Ends the IF block",
+        "D": "Displays a variable name"
+      },
+      "answer": "B"
+    }
+  ],
+  "post_test": [
+    {
+      "id": "COMPUTE-POST-001",
+      "type": "multiple_choice",
+      "prompt": "Why is BONUS-RATE multiplied by BASE-PAY in this example?",
+      "choices": {
+        "A": "To calculate a percentage-based bonus amount",
+        "B": "To rename the field",
+        "C": "To create a new program",
+        "D": "To exit PROCEDURE DIVISION"
+      },
+      "answer": "A"
+    },
+    {
+      "id": "COMPUTE-POST-002",
+      "type": "multiple_choice",
+      "prompt": "After the COMPUTE line, what does DISPLAY BONUS-AMOUNT do?",
+      "choices": {
+        "A": "Deletes BONUS-AMOUNT",
+        "B": "Shows the calculated result",
+        "C": "Recalculates the formula",
+        "D": "Moves BASE-PAY into BONUS-AMOUNT"
+      },
+      "answer": "B"
+    }
+  ]
+}
