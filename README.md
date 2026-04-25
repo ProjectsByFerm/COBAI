@@ -29,32 +29,6 @@ Experiment Framework
 Run structured studies on learning effectiveness
 Export and analyze results
 
-📁 Project Structure
-COBAI/
-│
-├── app/                  # Core application logic
-│   ├── coach.py         # AI coaching system
-│   ├── llm_client.py    # LLM API integration
-│   ├── scoring.py       # Evaluation logic
-│   ├── study_runner.py  # Experiment execution
-│
-├── materials/           # Learning content
-│   ├── tasks/           # JSON-based exercises
-│   ├── tutorials/       # Supporting lessons
-│   ├── prompts/         # AI coaching prompts
-│
-├── data/                # Input/output data
-│
-├── analysis/            # Result analysis tools
-│
-├── docs/                # System & research documentation
-│   ├── SYSTEM_ARCHITECTURE.md
-│   ├── RESEARCH_FRAMEWORK.md
-│
-├── protocol/            # Study protocols & measurement plans
-│
-└── README.md
-
 ⚙️ Setup
 1. Clone the repo
 git clone https://github.com/ProjectsByFerm/COBAI.git
